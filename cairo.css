@@ -1,0 +1,63 @@
+body{
+    background-color: #151719;
+    background-image: url(Cairo/CardsBg.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: bgfade 2s;
+    -webkit-animation: bgfade 2s;
+}
+div:hover {
+    line-height: 30px;
+    font-size: 16px;
+    color: black;
+}
+
+.align-items-center {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+.col{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    max-height: 25%;
+}
+.col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 2%;
+    transition: transform 0.25s ease;
+    height: 25%;
+}
+
+.col img:hover {
+    transform: scale(1.5);
+}
+@media screen and (max-width: 200px) {
+    .col{
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+    .align-items-center{
+        
+        flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col{
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+

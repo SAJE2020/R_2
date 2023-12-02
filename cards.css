@@ -1,0 +1,91 @@
+body{
+    background-image: url(Cairo/CardsBg.png);
+
+}
+.topnav{
+    background-color: rgb(184, 158, 75);
+    overflow: hidden;
+    opacity: 80%;
+    position: absolute;
+    top: 20px;
+    left: 170px;
+}
+.topnav h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Cookie';
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
+    opacity: 1;
+    color: black;
+}
+#imgPharoh{
+    border-radius: 100%;
+    width: 200px;
+    float: left;
+    position: absolute;
+    top: -2px;
+    left: 16px;
+}
+.row{
+    margin: 0 -5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.column{
+    float: left;
+    width: 75%;
+    padding: 0 10px;
+}
+h4{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+.card{
+    color: white;
+    border: transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: "Cookie";
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: all 0.2s ease-out;
+}
+@media screen and (max-width:100px){
+    .column{
+        width: 50%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+.tinyPicture{
+    height: 150px;
+    border-radius: 10px;
+}
+.card:hover{
+    background-color: rgb(184, 158, 75);
+    color: black;
+    border-color: #000000;
+    transform: translateY(-0.2px);
+}
+#imgPharoh:hover{
+    animation-name: rollOver;
+    animation-duration: 0.8s;
+    animation-iteration-count: 2;
+}
+@keyframes rollOver {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
